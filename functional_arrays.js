@@ -126,7 +126,7 @@ Array.prototype.for_each_range = function (begin, end, action) {
  */
 Array.prototype.for_each_index = function (indices, action) {
   var args = sliceArguments (arguments, 2);
-  for (var i = 0 length = indices.length; i < length; ++i) {
+  for (var i = 0, length = indices.length; i < length; ++i) {
     args.unshift (this[indices[i]]);
     action.apply (null, args);
     args.shift ();
