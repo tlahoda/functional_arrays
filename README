@@ -1,13 +1,68 @@
-======================================================================
+=========================================================================
 =
 = Functional Arrays
 =
-======================================================================
+=========================================================================
 
 Functional Arrays provides a set of prototype extensions to Javascripts
-Array object that help faciliatate functional programming.
+Array object that help facilitate functional programming.
 
-======================================================================
+The prototype extensions consist of six methods that allow for different
+iterations over an Array. Three of the methods will modify the contents
+of the Array while the other three methods are non-modifying. 
+
+--------------------------------------------------------------------------
+
+The three modifying methods are apply, apply_range, and apply_index.
+
+apply applies an action to each element of the Array storing the result
+of action in the element. 
+
+example:
+
+
+apply_range applies an action to the elements in the specified range of
+the Array storing the result of action in the element.
+
+example:
+
+
+apply_index applies an action to the elements specified in the indices
+array storing the result of action in the element.
+
+example:
+
+
+--------------------------------------------------------------------------
+
+The three non-modifying methods are for_Each, for_each_range, and
+for_each_index.
+
+for_each runs action for each element of the Array.
+
+example:
+
+
+for_each_range runs action for each element in the specified range of the
+Array.
+
+example:
+
+
+for_each_index runs action for each of the elements specified in the
+indices array.
+
+example:
+
+
+--------------------------------------------------------------------------
+
+Functional Arrays also provides a sliceArguments function that will
+provide an alice of the arguments back as an Array. This method is
+necessary since the arguments object does not provide a slice operation.
+
+=========================================================================
+
 Copyright (C) 2011 Thomas P. Lahoda
 
 This library is free software; you can redistribute it and/or
