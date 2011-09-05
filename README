@@ -1,4 +1,11 @@
+======================================================================
+=
+= Functional Arrays
+=
+======================================================================
 
+Functional Arrays provides a set of prototype extensions to Javascripts
+Array object that help faciliatate functional programming.
 
 ======================================================================
 Copyright (C) 2011 Thomas P. Lahoda
