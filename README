@@ -98,19 +98,19 @@ necessary since the arguments object does not provide a slice operation.
 
   examples:
 
-    //The following will slice all of the arguments into the Array.
+    //The following will slice all of the arguments into args.
     function foo () {
       var args = sliceArguments (arguments);
     }
 
     //The following will slice the second through the end of arguments 
-    //the into Array.
+    //the into args.
     function foo () {
       var args = sliceArguments (arguments, 1);
     }
 
     //The following will sloce the second through the fourth arguments
-    //into the Array.
+    //into args.
     function foo () {
       var args = sliceArguments (arguments, 1, 3);
     }
