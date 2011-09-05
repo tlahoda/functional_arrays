@@ -11,6 +11,9 @@ The prototype extensions consist of six methods that allow for different
 iterations over an Array. Three of the methods will modify the contents
 of the Array while the other three methods are non-modifying. 
 
+Any additional arguments passed into the prototype extensions other than
+what is specified for them will be passed along to action.
+
 --------------------------------------------------------------------------
 
 The three modifying methods are apply, apply_range, and apply_index.
@@ -40,6 +43,11 @@ apply_index:
     Array.prototype.apply_index = function (indices, action)
 
   example:
+
+
+The action method passed into the prototype extension will take the form:
+
+    function action (element) { return res; };
 
 
 --------------------------------------------------------------------------
@@ -73,11 +81,21 @@ indices array.
   example:
 
 
+The action method passed into the prototype extension will take the form:
+
+    function action (element) {};
+
+
 --------------------------------------------------------------------------
 
-Functional Arrays also provides a sliceArguments function that will
-provide an alice of the arguments back as an Array. This method is
+sliceArguments:
+  provides a slice of the arguments back as an Array. This method is
 necessary since the arguments object does not provide a slice operation.
+
+    function sliceArguments (args, begin, end)
+
+  example:
+
 
 =========================================================================
 
