@@ -56,7 +56,9 @@ The three non-modifying methods are for_Each, for_each_range, and
 for_each_index.
 
 for_each:
-  runs action for each element of the Array.
+  runs action for each element of the Array. for_each is similar to
+Javascript's native forEach Array method. It is here for naming
+consistency and to allow extra arguments to be passed to action.
 
     Array.prototype.for_each = function (action)
 
@@ -94,7 +96,24 @@ necessary since the arguments object does not provide a slice operation.
 
     function sliceArguments (args, begin, end)
 
-  example:
+  examples:
+
+    //The following will slice all of the arguments into the Array.
+    function foo () {
+      var args = sliceArguments (arguments);
+    }
+
+    //The following will slice the second through the end of arguments 
+    //the into Array.
+    function foo () {
+      var args = sliceArguments (arguments, 1);
+    }
+
+    //The following will sloce the second through the fourth arguments
+    //into the Array.
+    function foo () {
+      var args = sliceArguments (arguments, 1, 3);
+    }
 
 
 =========================================================================
