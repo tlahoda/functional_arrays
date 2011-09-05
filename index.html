@@ -189,7 +189,7 @@ ul.inheritsList
 <h2>Classes</h2>
 <ul class="classList">
 	
-	<li><a href="index.html">Array</a></li>
+	<li><a href="../symbols/Array.html">Array</a></li>
 	
 </ul>
 <hr />
@@ -245,7 +245,7 @@ ul.inheritsList
 						<tr>
 							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont"><b><a href="../symbols/Array.html#apply_index">apply_index</a></b>(indices, action)
+								<div class="fixedFont"><b><a href="../symbols/Array.html#apply_index">apply_index</a></b>(The, action)
 								</div>
 								<div class="description">Applies action to the specified indices of the Array elements.</div>
 							</td>
@@ -290,7 +290,7 @@ ul.inheritsList
 						<tr>
 							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont"><b><a href="../symbols/Array.html#slice_args">slice_args</a></b>(args, begin, end)
+								<div class="fixedFont"><b><a href="../symbols/Array.html#slice_args">slice_args</a></b>(begin, end, args)
 								</div>
 								<div class="description">Makes a copy of the arguments from begin to end.</div>
 							</td>
@@ -326,10 +326,6 @@ ul.inheritsList
 					</div>
 					<div class="description">
 						Applies action to all of the elements of the Array.
-
-\param action The action to apply.
-
-\return The Array.
 						
 							<br />
 							<i>Defined in: </i> <a href="../symbols/src/functional_arrays_functional_arrays.js.html">functional_arrays.js</a>.
@@ -347,13 +343,20 @@ ul.inheritsList
 									<b>action</b>
 									
 								</dt>
-								<dd></dd>
+								<dd>The action to apply.</dd>
 							
 							</dl>
 						
 						
 						
 						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>The Array.</dd>
+							
+							</dl>
 						
 						
 						
@@ -364,16 +367,11 @@ ul.inheritsList
 					<div class="fixedFont">
 					
 					
-					<b>apply_index</b>(indices, action)
+					<b>apply_index</b>(The, action)
 					
 					</div>
 					<div class="description">
 						Applies action to the specified indices of the Array elements.
-
-\param The indices to which to apply the action.
-\param action The action to apply.
-
-\return The Array.
 						
 							<br />
 							<i>Defined in: </i> <a href="../symbols/src/functional_arrays_functional_arrays.js.html">functional_arrays.js</a>.
@@ -388,22 +386,29 @@ ul.inheritsList
 							<dt class="heading">Parameters:</dt>
 							
 								<dt>
-									<b>indices</b>
+									<b>The</b>
 									
 								</dt>
-								<dd></dd>
+								<dd>indices to which to apply the action.</dd>
 							
 								<dt>
 									<b>action</b>
 									
 								</dt>
-								<dd></dd>
+								<dd>The action to apply.</dd>
 							
 							</dl>
 						
 						
 						
 						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>The Array.</dd>
+							
+							</dl>
 						
 						
 						
@@ -419,12 +424,6 @@ ul.inheritsList
 					</div>
 					<div class="description">
 						Applies action to the specified range of the Array elements.
-
-\param begin The beginning of the range.
-\param end The end of the range.
-\param action The action to apply.
-
-\return The Array.
 						
 							<br />
 							<i>Defined in: </i> <a href="../symbols/src/functional_arrays_functional_arrays.js.html">functional_arrays.js</a>.
@@ -442,25 +441,32 @@ ul.inheritsList
 									<b>begin</b>
 									
 								</dt>
-								<dd></dd>
+								<dd>The beginning of the range.</dd>
 							
 								<dt>
 									<b>end</b>
 									
 								</dt>
-								<dd></dd>
+								<dd>The end of the range.</dd>
 							
 								<dt>
 									<b>action</b>
 									
 								</dt>
-								<dd></dd>
+								<dd>The action to apply.</dd>
 							
 							</dl>
 						
 						
 						
 						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>The Array.</dd>
+							
+							</dl>
 						
 						
 						
@@ -476,10 +482,6 @@ ul.inheritsList
 					</div>
 					<div class="description">
 						Runs action for all of the elements of the Array.
-
-\param action The action to apply.
-
-\return The Array.
 						
 							<br />
 							<i>Defined in: </i> <a href="../symbols/src/functional_arrays_functional_arrays.js.html">functional_arrays.js</a>.
@@ -497,13 +499,20 @@ ul.inheritsList
 									<b>action</b>
 									
 								</dt>
-								<dd></dd>
+								<dd>The action to apply.</dd>
 							
 							</dl>
 						
 						
 						
 						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>The Array.</dd>
+							
+							</dl>
 						
 						
 						
@@ -519,11 +528,6 @@ ul.inheritsList
 					</div>
 					<div class="description">
 						Runs action on each of the indices of the Array.
-
-\param indices The indices on which to run the action.
-\param action The action to apply.
-
-\return The Array.
 						
 							<br />
 							<i>Defined in: </i> <a href="../symbols/src/functional_arrays_functional_arrays.js.html">functional_arrays.js</a>.
@@ -541,19 +545,26 @@ ul.inheritsList
 									<b>indices</b>
 									
 								</dt>
-								<dd></dd>
+								<dd>The indices on which to run the action.</dd>
 							
 								<dt>
 									<b>action</b>
 									
 								</dt>
-								<dd></dd>
+								<dd>The action to apply.</dd>
 							
 							</dl>
 						
 						
 						
 						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>The Array.</dd>
+							
+							</dl>
 						
 						
 						
@@ -569,12 +580,6 @@ ul.inheritsList
 					</div>
 					<div class="description">
 						Runs action on each element in the specified range of the Array.
-
-\param begin The beginning of the range.
-\param end The end of the range.
-\param action The action to apply.
-
-\return The Array.
 						
 							<br />
 							<i>Defined in: </i> <a href="../symbols/src/functional_arrays_functional_arrays.js.html">functional_arrays.js</a>.
@@ -592,25 +597,32 @@ ul.inheritsList
 									<b>begin</b>
 									
 								</dt>
-								<dd></dd>
+								<dd>The beginning of the range.</dd>
 							
 								<dt>
 									<b>end</b>
 									
 								</dt>
-								<dd></dd>
+								<dd>The end of the range.</dd>
 							
 								<dt>
 									<b>action</b>
 									
 								</dt>
-								<dd></dd>
+								<dd>The action to apply.</dd>
 							
 							</dl>
 						
 						
 						
 						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>The Array.</dd>
+							
+							</dl>
 						
 						
 						
@@ -621,17 +633,11 @@ ul.inheritsList
 					<div class="fixedFont">
 					
 					
-					<b>slice_args</b>(args, begin, end)
+					<b>slice_args</b>(begin, end, args)
 					
 					</div>
 					<div class="description">
 						Makes a copy of the arguments from begin to end.
-
-\param begin The begining of the range.
-\param end The end of the range.
-\param args The arguments.
-
-\return The remaining arguments.
 						
 							<br />
 							<i>Defined in: </i> <a href="../symbols/src/functional_arrays_functional_arrays.js.html">functional_arrays.js</a>.
@@ -646,28 +652,35 @@ ul.inheritsList
 							<dt class="heading">Parameters:</dt>
 							
 								<dt>
-									<b>args</b>
-									
-								</dt>
-								<dd></dd>
-							
-								<dt>
 									<b>begin</b>
 									
 								</dt>
-								<dd></dd>
+								<dd>The begining of the range.</dd>
 							
 								<dt>
 									<b>end</b>
 									
 								</dt>
-								<dd></dd>
+								<dd>The end of the range.</dd>
+							
+								<dt>
+									<b>args</b>
+									
+								</dt>
+								<dd>The arguments.</dd>
 							
 							</dl>
 						
 						
 						
 						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>The remaining arguments.</dd>
+							
+							</dl>
 						
 						
 						
@@ -686,7 +699,7 @@ ul.inheritsList
 <!-- ============================== footer ================================= -->
 		<div class="fineprint" style="clear:both">
 			
-			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Mon Sep 05 2011 18:26:58 GMT-0400 (EDT)
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Mon Sep 05 2011 18:46:28 GMT-0400 (EDT)
 		</div>
 	</body>
 </html>
