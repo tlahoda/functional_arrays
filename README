@@ -15,22 +15,31 @@ of the Array while the other three methods are non-modifying.
 
 The three modifying methods are apply, apply_range, and apply_index.
 
-apply applies an action to each element of the Array storing the result
-of action in the element. 
+apply:
+    applies an action to each element of the Array storing the result
+  of action in the element. 
 
-example:
+    Array.prototype.apply = function (action)
 
-
-apply_range applies an action to the elements in the specified range of
-the Array storing the result of action in the element.
-
-example:
+  example:
 
 
-apply_index applies an action to the elements specified in the indices
-array storing the result of action in the element.
+apply_range:
+    applies an action to the elements in the specified range of
+  the Array storing the result of action in the element.
 
-example:
+    Array.prototype.apply_range = function (begin, end, action) {
+
+  example:
+
+
+apply_index:
+    applies an action to the elements specified in the indices
+  array storing the result of action in the element.
+
+    Array.prototype.apply_index = function (indices, action) {
+
+  example:
 
 
 --------------------------------------------------------------------------
@@ -38,21 +47,30 @@ example:
 The three non-modifying methods are for_Each, for_each_range, and
 for_each_index.
 
-for_each runs action for each element of the Array.
+for_each:
+  runs action for each element of the Array.
 
-example:
+    Array.prototype.for_each = function (action) {
+
+  example:
 
 
-for_each_range runs action for each element in the specified range of the
+for_each_range:
+  runs action for each element in the specified range of the
 Array.
 
-example:
+    Array.prototype.for_each_range = function (begin, end, action) {
+
+  example:
 
 
-for_each_index runs action for each of the elements specified in the
+for_each_index:
+  runs action for each of the elements specified in the
 indices array.
 
-example:
+    Array.prototype.for_each_index = function (indices, action) {
+
+  example:
 
 
 --------------------------------------------------------------------------
