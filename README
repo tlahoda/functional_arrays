@@ -28,7 +28,7 @@ apply_range:
     applies an action to the elements in the specified range of
   the Array storing the result of action in the element.
 
-    Array.prototype.apply_range = function (begin, end, action) {
+    Array.prototype.apply_range = function (begin, end, action)
 
   example:
 
@@ -37,7 +37,7 @@ apply_index:
     applies an action to the elements specified in the indices
   array storing the result of action in the element.
 
-    Array.prototype.apply_index = function (indices, action) {
+    Array.prototype.apply_index = function (indices, action)
 
   example:
 
@@ -50,7 +50,7 @@ for_each_index.
 for_each:
   runs action for each element of the Array.
 
-    Array.prototype.for_each = function (action) {
+    Array.prototype.for_each = function (action)
 
   example:
 
@@ -59,7 +59,7 @@ for_each_range:
   runs action for each element in the specified range of the
 Array.
 
-    Array.prototype.for_each_range = function (begin, end, action) {
+    Array.prototype.for_each_range = function (begin, end, action)
 
   example:
 
@@ -68,7 +68,7 @@ for_each_index:
   runs action for each of the elements specified in the
 indices array.
 
-    Array.prototype.for_each_index = function (indices, action) {
+    Array.prototype.for_each_index = function (indices, action)
 
   example:
 
