@@ -130,7 +130,7 @@ The action method passed into the prototype extension will take the form:
 
 --------------------------------------------------------------------------
 
-sliceArguments:
+slice_args:
   provides a slice of the arguments back as an Array. This method is
 necessary since the arguments object does not provide a slice operation.
 
@@ -140,19 +140,19 @@ necessary since the arguments object does not provide a slice operation.
 
     //The following will slice all of the arguments into args.
     function foo () {
-      var args = sliceArguments (arguments);
+      var args = Array.prototype.slice_args (arguments);
     }
 
     //The following will slice the second through the end of arguments 
     //the into args.
     function foo () {
-      var args = sliceArguments (arguments, 1);
+      var args = Array.prototype.slice_args (arguments, 1);
     }
 
     //The following will sloce the second through the fourth arguments
     //into args.
     function foo () {
-      var args = sliceArguments (arguments, 1, 3);
+      var args = Array.prototype.slice_args (arguments, 1, 3);
     }
 
 
