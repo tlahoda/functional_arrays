@@ -97,35 +97,34 @@ necessary since the arguments object does not provide a slice operation.
     function sliceArguments (args, begin, end)
 
   examples:
-
-    //The following will slice all of the arguments into args.
+    `//The following will slice all of the arguments into args.
     function foo () {
       var args = Array.prototype.slice_args (arguments);
       console.log (args);
     }
-    foo (1, 2, 3, 4, 5);
+    foo (1, 2, 3, 4, 5);`
 
     outputs:
       1, 2, 3, 4, 5
 
-    //The following will slice the second through the end of arguments 
+    `//The following will slice the second through the end of arguments 
     //the into args.
     function foo () {
       var args = Array.prototype.slice_args (arguments, 1);
       console.log (args);
     }
-    foo (1, 2, 3, 4, 5);
+    foo (1, 2, 3, 4, 5);`
 
     outputs:
       2, 3, 4, 5
 
-    //The following will slice the second through the fourth arguments
+    `//The following will slice the second through the fourth arguments
     //into args.
     function foo () {
       var args = Array.prototype.slice_args (arguments, 1, 3);
       console.log (args);
     }
-    foo (1, 2, 3, 4, 5);
+    foo (1, 2, 3, 4, 5);`
 
     outputs:
       2, 3, 4
