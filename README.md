@@ -104,7 +104,7 @@ necessary since the arguments object does not provide a slice operation.
     }
     foo (1, 2, 3, 4, 5);`
 
-    outputs:
+    outputs
       1, 2, 3, 4, 5
 
     `//The following will slice the second through the end of arguments 
@@ -115,7 +115,7 @@ necessary since the arguments object does not provide a slice operation.
     }
     foo (1, 2, 3, 4, 5);`
 
-    outputs:
+    outputs
       2, 3, 4, 5
 
     `//The following will slice the second through the fourth arguments
@@ -126,7 +126,7 @@ necessary since the arguments object does not provide a slice operation.
     }
     foo (1, 2, 3, 4, 5);`
 
-    outputs:
+    outputs
       2, 3, 4
 
 
