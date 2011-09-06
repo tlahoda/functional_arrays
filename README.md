@@ -17,6 +17,45 @@ what is specified for them will be passed along to action.
 
 ###Extra Methods
 
+slice_args:
+  provides a slice of the arguments back as an Array. This method is
+necessary since the arguments object does not provide a slice operation.
+
+    function sliceArguments (args, begin, end)
+
+  examples:
+
+    //The following will slice all of the arguments into args.
+    function foo () {
+      var args = Array.prototype.slice_args (arguments);
+      console.log (args);
+    }
+    foo (1, 2, 3, 4, 5);
+
+    outputs:
+      1, 2, 3, 4, 5
+
+    //The following will slice the second through the end of arguments 
+    //the into args.
+    function foo () {
+      var args = Array.prototype.slice_args (arguments, 1);
+      console.log (args);
+    }
+    foo (1, 2, 3, 4, 5);
+
+    outputs:
+      2, 3, 4, 5
+
+    //The following will slice the second through the fourth arguments
+    //into args.
+    function foo () {
+      var args = Array.prototype.slice_args (arguments, 1, 3);
+      console.log (args);
+    }
+    foo (1, 2, 3, 4, 5);
+
+    outputs:
+      2, 3, 4
 
 
 ####Copyright (C) 2011 Thomas P. Lahoda
