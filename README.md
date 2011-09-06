@@ -96,7 +96,7 @@ necessary since the arguments object does not provide a slice operation.
 
     function sliceArguments (args, begin, end)
 
-  examples:
+  examples
     `//The following will slice all of the arguments into args.
     function foo () {
       var args = Array.prototype.slice_args (arguments);
