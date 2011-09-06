@@ -11,18 +11,15 @@ of the Array while the other three methods are non-modifying.
 Any additional arguments passed into the prototype extensions other than
 what is specified for them will be passed along to action.
 
-Modifying Methods
------------------
+###Modifying Methods
 
-Non-modifying Methods
----------------------
+###Non-modifying Methods
 
-Extra Methods
--------------
+###Extra Methods
 
 
 
-###Copyright (C) 2011 Thomas P. Lahoda
+####Copyright (C) 2011 Thomas P. Lahoda
 
 This library is free software; you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public
