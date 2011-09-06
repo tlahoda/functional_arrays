@@ -31,6 +31,10 @@ apply:
     }
     var a = [1, 2, 3, 4, 5];
     a.apply (scale, 8);
+    console.log (a);
+
+    outputs:
+      1, 16, 24, 32, 40
 
 
 apply_range:
@@ -47,6 +51,10 @@ apply_range:
     }
     var a = [1, 2, 3, 4, 5];
     a.apply_range (1, a.length, scale, 8);
+    console.log (a);
+
+    outputs:
+      1, 16, 24, 32, 40
 
 
 apply_index:
@@ -63,6 +71,10 @@ apply_index:
     }
     var a = [1, 2, 3, 4, 5];
     a.apply_index ([1, 3], scale, 8);
+    console.log (a);
+
+    outputs:
+      1, 16, 3, 32, 5
 
 
 The action method passed into the prototype extension will take the form:
@@ -85,10 +97,17 @@ for_each:
   example:
     //The following shows an alert for each element in a.
     function foo (ele) {
-      alert (ele);
+      console.log (ele);
     }
     var a = [1, 2, 3, 4, 5];
     a.for_each (foo);
+
+    outputs:
+      1
+      2
+      3
+      4
+      5
 
 
 for_each_range:
@@ -101,10 +120,16 @@ for_each_range:
     //The following shows an alert for the second throug hthe last 
     //elements in a.
     function foo (ele) {
-      alert (ele);
+      console.log (ele);
     }
     var a = [1, 2, 3, 4, 5];
     a.for_each_range (1, a.length, foo);
+
+    outputs:
+      2
+      3
+      4
+      5
 
 
 for_each_index:
@@ -117,10 +142,14 @@ for_each_index:
     //The following shows an alert for the second and the fourth
     //elements in a.
     function foo (ele) {
-      alert (ele);
+      console.log (ele);
     }
     var a = [1, 2, 3, 4, 5];
     a.for_eachi_index ([1, 3], foo);
+
+    outputs:
+      2
+      4
 
 
 The action method passed into the prototype extension will take the form:
@@ -141,19 +170,34 @@ necessary since the arguments object does not provide a slice operation.
     //The following will slice all of the arguments into args.
     function foo () {
       var args = Array.prototype.slice_args (arguments);
+      console.log (args);
     }
+    foo (1, 2, 3, 4, 5);
+
+    outputs:
+      1, 2, 3, 4, 5
 
     //The following will slice the second through the end of arguments 
     //the into args.
     function foo () {
       var args = Array.prototype.slice_args (arguments, 1);
+      console.log (args);
     }
+    foo (1, 2, 3, 4, 5);
 
-    //The following will sloce the second through the fourth arguments
+    outputs:
+      2, 3, 4, 5
+
+    //The following will slice the second through the fourth arguments
     //into args.
     function foo () {
       var args = Array.prototype.slice_args (arguments, 1, 3);
+      console.log (args);
     }
+    foo (1, 2, 3, 4, 5);
+
+    outputs:
+      2, 3, 4
 
 
 =========================================================================
