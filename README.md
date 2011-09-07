@@ -99,6 +99,7 @@ function sliceArguments (args, begin, end)
 ```
 
 examples:  
+
 ```javascript
 //The following will slice all of the arguments into args.  
 function foo () {  
