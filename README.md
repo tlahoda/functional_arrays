@@ -13,6 +13,84 @@ what is specified for them will be passed along to action.
 
 ###Modifying Methods
 
+The three modifying methods are apply, apply_range, and apply_index.  
+
+The action method passed into the prototype extension will take the form:
+
+```javascript
+function action (element) { return res; };
+```
+
+####apply:  
+Applies an action to each element of the Array storing the result
+of action in the element. 
+
+```javascript
+Array.prototype.apply = function (action)
+```
+
+#####example:  
+```javascript
+//The following multiplies every element of a by 8.
+function scale (ele, scalingFactor) {
+  return ele * scalingFactor;
+}
+var a = [1, 2, 3, 4, 5];
+a.apply (scale, 8);
+console.log (a);
+```
+
+#####outputs:  
+1, 16, 24, 32, 40
+
+
+####apply_range:  
+Applies an action to the elements in the specified range of
+the Array storing the result of action in the element.
+
+Array.prototype.apply_range = function (begin, end, action)
+```
+
+#####example:  
+```javascript
+//The following multiplies the second through the last elements of a 
+//by 8.
+function scale (ele, scalingFactor) {
+  return ele * scalingFactor;
+}
+var a = [1, 2, 3, 4, 5];
+a.apply_range (1, a.length, scale, 8);
+console.log (a);
+```
+
+#####outputs:  
+1, 16, 24, 32, 40
+
+
+####apply_index:  
+Applies an action to the elements specified in the indices
+array storing the result of action in the element.
+
+```javascript
+Array.prototype.apply_index = function (indices, action)
+```
+
+#####example:  
+```javascript
+//The following multiplies the second and the fourth elements of a by
+//8.
+function scale (ele, scalingFactor) {
+  return ele * scalingFactor;
+}
+var a = [1, 2, 3, 4, 5];
+a.apply_index ([1, 3], scale, 8);
+console.log (a);
+```
+
+#####outputs:  
+1, 16, 3, 32, 5
+
+
 ###Non-modifying Methods
 
 The three non-modifying methods are for_Each, for_each_range, and
