@@ -50,6 +50,7 @@ console.log (a);
 Applies an action to the elements in the specified range of
 the Array storing the result of action in the element.
 
+```javascript
 Array.prototype.apply_range = function (begin, end, action)
 ```
 
