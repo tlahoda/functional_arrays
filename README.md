@@ -16,7 +16,14 @@ what is specified for them will be passed along to action.
 ###Non-modifying Methods
 
 The three non-modifying methods are for_Each, for_each_range, and
-for_each_index.
+for_each_index.  
+
+The action method passed into the prototype extension will take the form:
+
+```javascript
+function action (element) {};
+```
+
 
 ####for_each:
 Runs action for each element of the Array. for_each is similar to
@@ -90,13 +97,6 @@ a.for_eachi_index ([1, 3], foo);
 #####outputs:
 2  
 4  
-
-
-The action method passed into the prototype extension will take the form:
-
-```javascript
-function action (element) {};
-```
 
 
 ###Extra Methods
