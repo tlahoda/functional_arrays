@@ -90,7 +90,7 @@ The action method passed into the prototype extension will take the form:
 
 ###Extra Methods
 
-slice_args  
+#####slice_args  
   provides a slice of the arguments back as an Array. This method is
 necessary since the arguments object does not provide a slice operation.
 
@@ -98,7 +98,7 @@ necessary since the arguments object does not provide a slice operation.
 function sliceArguments (args, begin, end)
 ```
 
-examples:  
+#####examples:  
 
 ```javascript
 //The following will slice all of the arguments into args.  
