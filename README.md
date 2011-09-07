@@ -38,11 +38,11 @@ a.for_each (foo);
 ```
 
 #####outputs:
-  1
-  2
-  3
-  4
-  5
+1  
+2  
+3  
+4  
+5  
 
 
 ####for_each_range:
@@ -63,13 +63,13 @@ a.for_each_range (1, a.length, foo);
 ```
 
 #####outputs:
-  2
-  3
-  4
-  5
+2  
+3  
+4  
+5  
 
 
-#####for_each_index:
+####for_each_index:
 runs action for each of the elements specified in the
 indices array.
 
@@ -88,14 +88,14 @@ a.for_eachi_index ([1, 3], foo);
 ```
 
 #####outputs:
-  2
-  4
+2  
+4  
 
 
 The action method passed into the prototype extension will take the form:
 
 ```javascript
-    function action (element) {};
+function action (element) {};
 ```
 
 
