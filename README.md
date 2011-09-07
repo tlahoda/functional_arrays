@@ -100,12 +100,12 @@ function sliceArguments (args, begin, end)
 
 examples:  
 ```javascript
-//The following will slice all of the arguments into args.
-function foo () {
-  var args = Array.prototype.slice_args (arguments);
-  console.log (args);
-}
-foo (1, 2, 3, 4, 5);
+//The following will slice all of the arguments into args.  
+function foo () {  
+  var args = Array.prototype.slice_args (arguments);  
+  console.log (args);  
+}  
+foo (1, 2, 3, 4, 5);  
 ```
 
 outputs:
