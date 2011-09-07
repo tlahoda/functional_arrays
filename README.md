@@ -41,7 +41,9 @@ console.log (a);
 ```
 
 #####outputs:  
+```
 1, 16, 24, 32, 40
+```
 
 
 ####apply_range:  
