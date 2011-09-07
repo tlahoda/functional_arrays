@@ -22,6 +22,7 @@ function action (element) { return res; };
 ```
 
 --------------------------------------------------------------------------
+
 ####apply:  
 Applies an action to each element of the Array storing the result
 of action in the element. 
@@ -47,6 +48,7 @@ console.log (a);
 ```
 
 --------------------------------------------------------------------------
+
 ####apply_range:  
 Applies an action to the elements in the specified range of
 the Array storing the result of action in the element.
@@ -73,6 +75,7 @@ console.log (a);
 ```
 
 --------------------------------------------------------------------------
+
 ####apply_index:  
 Applies an action to the elements specified in the indices
 array storing the result of action in the element.
@@ -99,6 +102,7 @@ console.log (a);
 ```
 
 --------------------------------------------------------------------------
+
 ###Non-modifying Methods
 
 The three non-modifying methods are for_Each, for_each_range, and
@@ -111,6 +115,7 @@ function action (element) {};
 ```
 
 --------------------------------------------------------------------------
+
 ####for_each:
 Runs action for each element of the Array. for_each is similar to
 Javascript's native forEach Array method. It is here for naming
@@ -140,6 +145,7 @@ a.for_each (foo);
 ```
 
 --------------------------------------------------------------------------
+
 ####for_each_range:
 Runs action for each element in the specified range of the Array.
 
@@ -166,6 +172,7 @@ a.for_each_range (1, a.length, foo);
 ```
 
 --------------------------------------------------------------------------
+
 ####for_each_index:
 runs action for each of the elements specified in the
 indices array.
@@ -191,6 +198,7 @@ a.for_eachi_index ([1, 3], foo);
 ```
 
 --------------------------------------------------------------------------
+
 ###Extra Methods
 
 ####slice_args: 
@@ -250,6 +258,8 @@ foo (1, 2, 3, 4, 5);
 ```
 2, 3, 4
 ```
+
+--------------------------------------------------------------------------
 
 ####Copyright (C) 2011 Thomas P. Lahoda
 
