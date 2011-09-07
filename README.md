@@ -101,8 +101,8 @@ The action method passed into the prototype extension will take the form:
 
 ###Extra Methods
 
-#####slice_args: 
-  provides a slice of the arguments back as an Array. This method is
+####slice_args: 
+provides a slice of the arguments back as an Array. This method is
 necessary since the arguments object does not provide a slice operation.
 
 ```javascript
@@ -120,8 +120,8 @@ function foo () {
 foo (1, 2, 3, 4, 5);  
 ```
 
-outputs:
-  1, 2, 3, 4, 5
+#####outputs:
+1, 2, 3, 4, 5
 
 ```javascript
 //The following will slice the second through the end of arguments 
@@ -133,8 +133,8 @@ function foo () {
 foo (1, 2, 3, 4, 5);
 ```
 
-outputs:
-  2, 3, 4, 5
+#####outputs:
+2, 3, 4, 5
 
 ```javascript
 //The following will slice the second through the fourth arguments
@@ -146,8 +146,8 @@ function foo () {
 foo (1, 2, 3, 4, 5);
 ```
 
-outputs:
-  2, 3, 4
+#####outputs:
+2, 3, 4
 
 
 ####Copyright (C) 2011 Thomas P. Lahoda
