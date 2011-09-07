@@ -66,7 +66,9 @@ console.log (a);
 ```
 
 #####outputs:  
+```
 1, 16, 24, 32, 40
+```
 
 
 ####apply_index:  
@@ -90,7 +92,9 @@ console.log (a);
 ```
 
 #####outputs:  
+```
 1, 16, 3, 32, 5
+```
 
 
 ###Non-modifying Methods
@@ -125,11 +129,13 @@ a.for_each (foo);
 ```
 
 #####outputs:
+```
 1  
 2  
 3  
 4  
 5  
+```
 
 
 ####for_each_range:
@@ -150,10 +156,12 @@ a.for_each_range (1, a.length, foo);
 ```
 
 #####outputs:
+```
 2  
 3  
 4  
 5  
+```
 
 
 ####for_each_index:
@@ -175,8 +183,10 @@ a.for_eachi_index ([1, 3], foo);
 ```
 
 #####outputs:
+```
 2  
 4  
+```
 
 
 ###Extra Methods
@@ -201,7 +211,9 @@ foo (1, 2, 3, 4, 5);
 ```
 
 #####outputs:
+```
 1, 2, 3, 4, 5
+```
 
 ```javascript
 //The following will slice the second through the end of arguments 
@@ -214,7 +226,9 @@ foo (1, 2, 3, 4, 5);
 ```
 
 #####outputs:
+```
 2, 3, 4, 5
+```
 
 ```javascript
 //The following will slice the second through the fourth arguments
@@ -227,7 +241,9 @@ foo (1, 2, 3, 4, 5);
 ```
 
 #####outputs:
+```
 2, 3, 4
+```
 
 
 ####Copyright (C) 2011 Thomas P. Lahoda
