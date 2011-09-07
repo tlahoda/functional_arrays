@@ -15,12 +15,14 @@ what is specified for them will be passed along to action.
 
 The three modifying methods are apply, apply_range, and apply_index.  
 
+--------------------------------------------------------------------------
 The action method passed into the prototype extension will take the form:
 
 ```javascript
 function action (element) { return res; };
 ```
 
+--------------------------------------------------------------------------
 ####apply:  
 Applies an action to each element of the Array storing the result
 of action in the element. 
@@ -45,7 +47,7 @@ console.log (a);
 1, 16, 24, 32, 40
 ```
 
-
+--------------------------------------------------------------------------
 ####apply_range:  
 Applies an action to the elements in the specified range of
 the Array storing the result of action in the element.
@@ -71,7 +73,7 @@ console.log (a);
 1, 16, 24, 32, 40
 ```
 
-
+--------------------------------------------------------------------------
 ####apply_index:  
 Applies an action to the elements specified in the indices
 array storing the result of action in the element.
@@ -249,7 +251,6 @@ foo (1, 2, 3, 4, 5);
 ```
 2, 3, 4
 ```
-
 
 ####Copyright (C) 2011 Thomas P. Lahoda
 
