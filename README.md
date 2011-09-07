@@ -18,7 +18,7 @@ what is specified for them will be passed along to action.
 The three non-modifying methods are for_Each, for_each_range, and
 for_each_index.
 
-#####for_each:
+####for_each:
 Runs action for each element of the Array. for_each is similar to
 Javascript's native forEach Array method. It is here for naming
 consistency and to allow extra arguments to be passed to action.
@@ -37,7 +37,7 @@ var a = [1, 2, 3, 4, 5];
 a.for_each (foo);
 ```
 
-outputs:
+#####outputs:
   1
   2
   3
@@ -45,14 +45,14 @@ outputs:
   5
 
 
-#####for_each_range:
+####for_each_range:
 Runs action for each element in the specified range of the Array.
 
 ```javascript
 Array.prototype.for_each_range = function (begin, end, action)
 ```
 
-  example:
+#####example:
 ```javascript
 //The following shows an alert for the second through the last elements in a.
 function foo (ele) {
@@ -62,7 +62,7 @@ var a = [1, 2, 3, 4, 5];
 a.for_each_range (1, a.length, foo);
 ```
 
-outputs:
+#####outputs:
   2
   3
   4
@@ -77,7 +77,7 @@ indices array.
 Array.prototype.for_each_index = function (indices, action)
 ```
 
-  example:
+#####example:
 ```javascript
 //The following shows an alert for the second and the fourth elements in a.
 function foo (ele) {
@@ -87,7 +87,7 @@ var a = [1, 2, 3, 4, 5];
 a.for_eachi_index ([1, 3], foo);
 ```
 
-outputs:
+#####outputs:
   2
   4
 
