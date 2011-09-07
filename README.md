@@ -15,7 +15,6 @@ what is specified for them will be passed along to action.
 
 The three modifying methods are apply, apply_range, and apply_index.  
 
---------------------------------------------------------------------------
 The action method passed into the prototype extension will take the form:
 
 ```javascript
@@ -99,7 +98,7 @@ console.log (a);
 1, 16, 3, 32, 5
 ```
 
-
+--------------------------------------------------------------------------
 ###Non-modifying Methods
 
 The three non-modifying methods are for_Each, for_each_range, and
@@ -111,7 +110,7 @@ The action method passed into the prototype extension will take the form:
 function action (element) {};
 ```
 
-
+--------------------------------------------------------------------------
 ####for_each:
 Runs action for each element of the Array. for_each is similar to
 Javascript's native forEach Array method. It is here for naming
@@ -140,7 +139,7 @@ a.for_each (foo);
 5  
 ```
 
-
+--------------------------------------------------------------------------
 ####for_each_range:
 Runs action for each element in the specified range of the Array.
 
@@ -166,7 +165,7 @@ a.for_each_range (1, a.length, foo);
 5  
 ```
 
-
+--------------------------------------------------------------------------
 ####for_each_index:
 runs action for each of the elements specified in the
 indices array.
@@ -191,7 +190,7 @@ a.for_eachi_index ([1, 3], foo);
 4  
 ```
 
-
+--------------------------------------------------------------------------
 ###Extra Methods
 
 ####slice_args: 
