@@ -19,9 +19,9 @@ The three non-modifying methods are for_Each, for_each_range, and
 for_each_index.
 
 #####for_each:
-    Runs action for each element of the Array. for_each is similar to
-  Javascript's native forEach Array method. It is here for naming
-  consistency and to allow extra arguments to be passed to action.
+Runs action for each element of the Array. for_each is similar to
+Javascript's native forEach Array method. It is here for naming
+consistency and to allow extra arguments to be passed to action.
 
 ```javascript
 Array.prototype.for_each = function (action)
@@ -70,8 +70,8 @@ outputs:
 
 
 #####for_each_index:
-    runs action for each of the elements specified in the
-  indices array.
+runs action for each of the elements specified in the
+indices array.
 
 ```javascript
 Array.prototype.for_each_index = function (indices, action)
