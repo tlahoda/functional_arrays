@@ -46,8 +46,7 @@ outputs:
 
 
 #####for_each_range:
-    Runs action for each element in the specified range of the
-  Array.
+Runs action for each element in the specified range of the Array.
 
 ```javascript
 Array.prototype.for_each_range = function (begin, end, action)
@@ -55,8 +54,7 @@ Array.prototype.for_each_range = function (begin, end, action)
 
   example:
 ```javascript
-//The following shows an alert for the second throug hthe last 
-//elements in a.
+//The following shows an alert for the second through the last elements in a.
 function foo (ele) {
   console.log (ele);
 }
@@ -81,8 +79,7 @@ Array.prototype.for_each_index = function (indices, action)
 
   example:
 ```javascript
-//The following shows an alert for the second and the fourth
-//elements in a.
+//The following shows an alert for the second and the fourth elements in a.
 function foo (ele) {
   console.log (ele);
 }
