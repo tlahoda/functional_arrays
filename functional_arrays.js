@@ -20,6 +20,61 @@
  */
 
 /**
+ * Swaps two elements of the array.
+ *
+ * @param pos1 The index of the first element.
+ * @param pos2 The index of the second element.
+ *
+ * @return The Array.
+ */
+Array.prototype.swap = function (pos1, pos2) {
+  var temp = this[pos1];
+  this[pos1] = this[pos2];
+  this[pos2] = temp;
+  return this;
+}
+
+/**
+ * Returns the index of the minimum element in the specified range of the array.
+ *
+ * @param begin The beginning of the range.
+ * @param end The end of the range.
+ * @param comparator The comparison function.
+ *
+ * @return The index of the minimum element of the array.
+ */
+Array.prototype.min_element = function (begin, end, comparator) {
+  if (begin == undefined) begin = 0;
+  if (end == undefined) end = list.length;
+  if (comparator == undefined) comparator = Math.min;
+  var m = begin;
+  for (var i = begin; i < end; ++i)
+    if (comparator (this[i], this[m]))
+      m = i;
+  return m;
+}
+
+/**
+ * Returns the index of the maximum element in the specified range of the array.
+ *
+ * @param begin The beginning of the range.
+ * @param end The end of the range.
+ * @param comparator The comparison function.
+ *
+ * @return The index of the maximum element of the array.
+ */
+Array.prototype.max_element = function (begin, end, comparator) {
+  if (begin == undefined) begin = 0;
+  if (end == undefined) end = list.length;
+  if (comparator == undefined) comparator = Math.max;
+  var m = begin;
+  for (var i = begin; i < end; ++i)
+    if (comparator (this[i], this[m]))
+      m = i;
+  return m;
+}
+
+/**
  * Makes a copy of the arguments from begin to end.
  *
  * @param begin The begining of the range.
