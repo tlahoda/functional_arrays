@@ -268,7 +268,7 @@ provides a slice of the arguments back as an Array. This method is
 necessary since the arguments object does not provide a slice operation.
 
 ```javascript
-function sliceArguments (args, begin, end)
+Array.prototype.slice_args = function (args, begin, end)
 ```
 
 #####example:  
