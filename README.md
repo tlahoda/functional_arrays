@@ -22,6 +22,67 @@ function action (element) { return res; };
 ```
    
 --------------------------------------------------------------------------
+  
+####swap:
+Swaps two elements of the Array.
+
+```javascript
+Array.prototype.swap = function (pos1, pos2)
+````
+
+#####example:
+```javascript
+var a = [1, 2, 3, 4, 5];
+a.swap (0, 4);
+console.log (a);
+```
+
+#####outputs:
+```
+5, 2, 3, 4, 1
+```
+
+--------------------------------------------------------------------------
+  
+####min_element:
+Returns the index of the minimum element of the Array.
+
+```javascript
+Array.prototype.min_element = function (begin, end, comparator)
+````
+
+#####example:
+```javascript
+var a = [1, 2, 3, 4, 5];
+console.log (a.min_element ());
+```
+
+#####outputs:
+```
+0
+```
+   
+--------------------------------------------------------------------------
+  
+####max_element:
+Returns the index of the maximum element of the Array.
+
+```javascript
+Array.prototype.max_element (begin, end, comparator)
+````
+
+#####example:
+```javascript
+var a = [1, 2, 3, 4, 5];
+console.log (a.max_element);
+```
+
+#####outputs:
+```
+4
+```
+
+--------------------------------------------------------------------------
 
 ####apply:  
 Applies an action to each element of the Array storing the result
