@@ -15,7 +15,7 @@ what is specified for them will be passed along to action.
 
 ###Modifying Methods
 
-The modifying methods are apply, apply_range, and apply_index.  
+The modifying methods are swap, apply, apply_range, and apply_index.  
 
 The action method passed into the prototype extension will take the form:
 
@@ -128,8 +128,8 @@ console.log (a);
 
 ###Non-modifying Methods
 
-The non-modifying methods are for_Each, for_each_range, and
-for_each_index.  
+The non-modifying methods are min_element, max_element, for_each,
+for_each_range, and for_each_index.  
 
 The action method passed into the prototype extension will take the form:
 
