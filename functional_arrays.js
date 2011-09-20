@@ -110,7 +110,7 @@ Array.prototype.for_each_range = function (begin, end, action) {
   var args = Array.prototype.slice_args (arguments, 3);
   for (var i = begin; i < end; ++i) {
     args.unshift (this[i]);
-    action.apply (null, args);
+    if (!action.apply (null, args)) break;
     args.shift ();
   }
   return this;
@@ -128,7 +128,7 @@ Array.prototype.for_each_index = function (indices, action) {
   var args = Array.prototype.slice_args (arguments, 2);
   for (var i = 0, length = indices.length; i < length; ++i) {
     args.unshift (this[indices[i]]);
-    action.apply (null, args);
+    if (!action.apply (null, args)) break;
     args.shift ();
   }
   return this;
