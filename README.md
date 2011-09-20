@@ -8,8 +8,6 @@ The prototype extensions consist of six methods that allow for different
 iterations over an Array. Three of the methods will modify the contents
 of the Array while the other three methods are non-modifying. 
 
-Some additional prototype extension are swap, min_element, and max_element.
-
 Any additional arguments passed into the prototype extensions other than
 what is specified for them will be passed along to action.
 
@@ -23,27 +21,6 @@ The action method passed into the prototype extension will take the form:
 function action (element) { return res; };
 ```
    
---------------------------------------------------------------------------
-  
-####swap:
-Swaps two elements of the Array.
-
-```javascript
-Array.prototype.swap = function (pos1, pos2)
-````
-
-#####example:
-```javascript
-var a = [1, 2, 3, 4, 5];
-a.swap (0, 4);
-console.log (a);
-```
-
-#####outputs:
-```
-5, 2, 3, 4, 1
-```
-
 --------------------------------------------------------------------------
 
 ####apply:  
@@ -128,52 +105,14 @@ console.log (a);
 
 ###Non-modifying Methods
 
-The non-modifying methods are min_element, max_element, for_each,
-for_each_range, and for_each_index.  
+The non-modifying methods are for_each, for_each_range, and for_each_index.
+Each of the non-modifying methods is short-ciruitable. If the action method
+returns false processing will stop with that element.
 
 The action method passed into the prototype extension will take the form:
 
 ```javascript
 function action (element) {};
-```
---------------------------------------------------------------------------
-  
-####min_element:
-Returns the index of the minimum element of the Array.
-
-```javascript
-Array.prototype.min_element = function (begin, end, comparator)
-````
-
-#####example:
-```javascript
-var a = [1, 2, 3, 4, 5];
-console.log (a.min_element ());
-```
-
-#####outputs:
-```
-0
-```
-   
---------------------------------------------------------------------------
-  
-####max_element:
-Returns the index of the maximum element of the Array.
-
-```javascript
-Array.prototype.max_element (begin, end, comparator)
-````
-
-#####example:
-```javascript
-var a = [1, 2, 3, 4, 5];
-console.log (a.max_element);
-```
-
-#####outputs:
-```
-4
 ```
    
 --------------------------------------------------------------------------
