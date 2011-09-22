@@ -114,7 +114,10 @@ The action method passed into the prototype extension will take the form:
 ```javascript
 function action (element) {};
 ```
-   
+
+If the action method returns false the for_each* loop will be termintated at
+the current element.
+
 --------------------------------------------------------------------------
 
 ####for_each:
